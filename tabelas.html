@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <table width="500" border="1">
+        <thead>
+            <!-- Cabeçalho da tabela -->
+            <tr>
+                 <!-- Linha de uma tabela -->
+            <th colspan="4">Faculdade da Alegria</th>
+                <!-- Podemos mesclar células de uma tabela usando colspan e rowspan -->
+            </tr>
+            <tr>
+                <!-- th: nome da coluna -->
+                <th width="50%">Curso</th>
+                    <!-- Podemos redimensionar as tabelas por meio de atributos -->
+                <th>Conteudista</th>
+                <th>Tutor</th>
+                <th>Realizado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Corpo da tabela -->
+            <tr>
+                <!-- Linha da tabela -->
+                <!-- td: Dado, valor -->
+                <td>Game Development</td>
+                <td colspan="2">Henrique Potatos</td>
+                <td rowspan="2">Sim</td>
+            </tr>
+            <tr>
+                <td>Web Devlopment</td>
+                <td>Alexandre o Mito</td>
+                <td>Alexandre o Mito</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- Rodapé da tabela -->
+            <tr>
+                <!-- Linha da tabela -->
+            </tr>
+        </tfoot>
+    </table>
+    <!--
+        Qualquer alteração visual na table deve ser alterada de preferencia no CSS
+    -->
+</body>
+</html>
