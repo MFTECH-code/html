@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!-- Principal forma de interação com entrada de dados -->
+    <form action="./formularios.html">
+        <fieldset>
+            <label for="nome">Nome:</label> <!-- Descrição do campo -->
+                <input type="text" id="nome"> <!-- Campo a ser preenchido -->
+            <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+        </fieldset>
+        <label for="sexo">Sexo:</label>
+            <input type="radio" name="masculino" id="masculino" value="masculino">Masculino
+            <input type="radio" name="feminino" id="feminino" value="feminino">Feminino<br>
+        <label for="interesses">Interesses:</label>
+            <input type="checkbox" name="cinema" id="cinema">Cinema
+            <input type="checkbox" name="programacao" id="programacao">Programação
+            <input type="checkbox" name="ciencias" id="ciencias">Ciências<br>
+        <select id="estadocivil" name="estadocivil" size="8">
+            <optgroup label="estadocivil">
+                <option value="S" selected>Solteiro</option>
+                <option value="C">Casado</option>
+                <option value="V">Viúvo</option>
+                <option value="D">Divorciado</option>
+            </optgroup>
+        </select><br>
+        <label for="observacao">Observação:</label><br>
+        <textarea name="observacao" id="observacao" cols="30" rows="10">Digite aqui...</textarea><br>
+        <label for="navegadores">Qual seu navegador favorito?</label>
+            <input list="navegadores" name="navegador">
+            <datalist id="navegadores">
+                <option value="Google Chrome">Google Chrome</option>
+                <option value="Fire Fox">Mozila Fire Fox</option>
+                <option value="Opera">Opera</option>
+            </datalist><br>
+        <label for="progress">Progresso</label>
+            <progress value="25" max="100"></progress>
+        
+        <input type="submit" value="enviar">
+    </form>
+    <!--
+        Atributos da tag form
+        accept-charset -> Usada para armazenar o padrão de caracteres que será usado
+        action -> Utilizada para armazenar o endereço (URL) na qual o formulário será submetido
+        autocomplete -> Permite que as funcionalidades de autocompletar presentes no navegador auxiliem
+        enctype -> Define qual o tipo de codificação será utilizada para submeter o formulário
+        method -> Define qual método HTTP será utilizado para submeter o formulário
+        name -> Define o nome do formulário dentro da API
+        novalidate -> ignora as validações do formulário
+        target -> mesmo atributo apresentado na tag a
+    -->
+    
+        <!--
+            Atributos de tags input
+            
+            accept -> funciona como dica de quais tipos de arquivos serão aceitos em um elemento de upload type=file
+            alt -> mesmo atributo da tag img, acessibilidade
+            autocomplete -> habilita a funcionalidade de autopreenchimento
+            autofocus -> concede foco ao elemento automaticamente assim que a página é carregada
+            checked -> Ao colocar um atributo em um elemento do tipo checkbox ou radio o elemento vem marcado como padrão
+            disabled -> ao colocar esse atributo no elemento, indica que ele está indisponível no momento e não é possível alterar
+            height -> Altura do elemento
+            list -> informa uma lista de opções para o recurso de autocompletar
+            max -> define o valor máximo que um campo do tipo numérico ou dara 
+            maxlength -> limite de caractéres
+            min -> define o valor minimo que um campo do tipo numerico ou data deve ter
+            minlength -> minimo de caractéres
+            multiple -> permite o campo capturar vários valores de uma vez
+            name -> define o nome do elemento na API
+            pattern -> permite definir um padrão em expressões regulares para validar este campo do formulário
+            placeholder -> rótulo visível no campo
+            readonly -> Deixa o elemento disponível somente para leitura
+            required -> define campo obrigatório
+            size -> tamanho do campo
+            type -> Dfine qual é o tipo de elemento de formulário
+                Tipos de input
+                text -> Caixa de texto padrão
+                hidden -> Campo escondido ou invisivel. Não renderizado
+                password -> Caixa de texto que mascara os caracteres digitados
+                checkbox -> Uma caixa de seleção múltipla
+                radio -> um botão redondo para seleção única
+                file -> caixa de texto e botão que permite fazer upload de arquivos
+                submit -> um botão que clicado submete o formulário
+                reset -> um botão, que restaura o formulário aos seus valores originais
+                button -> um botão que não faz nada
+                tel -> Específico para guardar telefone
+                url -> Específico para armazenar um endereço web 
+                search -> Específico para campo de pesquisa
+                email -> Específico para guardar email
+                number -> Específico para guardar valores númericos
+                date -> Específico para guardar data
+                time -> Específico para guardar hora
+                range -> Específico para interválo númerico
+                color -> específico para armazenar cores
+            value -> Permite definir um valor padrão
+            width -> Comprimento do elemento
+        -->
+
+</body>
+</html>
